@@ -7,4 +7,23 @@ Spruce.store('counter', {
   countDown: 100
 })
 
+// persitent store
+Spruce.store('toast', {
+    toasts: [],
+    add(message) {
+        this.toasts.push(message)
+    },
+    remove(index) {
+        this.toasts.splice(index, 1)
+    }
+}, true )
+
+
+Spruce.store('user', {
+    name: 'Ryan Chandler',
+    email: 'support@ryangjchandler.co.uk',
+})
+
+Spruce.watch('user.name', value => console.log(value))
+
 export default Spruce
