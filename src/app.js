@@ -8,11 +8,7 @@ const components = [...document.querySelectorAll("[x-data$='()']")].map(componen
 const layouts = [...document.querySelectorAll("[x-src]")].map(layer => layer.getAttribute('x-src'))
 
 ;(async () => {
-  /*
-  await registerComponents({
-    toggle: './components/toggle.js'
-  })
-  */
+  
   /*
   fetch('./layouts/header.html?nocache='+ Math.random())
   .then(response => response.text())
