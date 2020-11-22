@@ -30,6 +30,10 @@ export default {
         {
           src: 'src/static/fonts/*',
           dest: 'dist/static/fonts/'
+        },
+        {
+          src: 'src/layouts/*',
+          dest: 'dist/layouts/'
         }
       ]
     })

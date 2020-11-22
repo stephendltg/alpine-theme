@@ -26,4 +26,4 @@ const layouts = [...document.querySelectorAll("[x-src]")].map(layer => layer.get
   await import('https://cdn.jsdelivr.net/gh/kevinbatdorf/alpine-magic-helpers@0.3.x/dist/index.js')
   await import('https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js')  
 })()
-  
+

@@ -1,15 +1,15 @@
 {
-  "name": "@{{package-slug}}",
+  "name": "@alpine-app",
   "version": "0.1.0",
-  "description": "{{package-description}}",
+  "description": "alpine app",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/{{package-slug}}.git"
+    "url": "git+https://github.com/stephendltg/alpine-theme.git"
   },
   "bugs": {
-    "url": "https://github.com/{{package-slug}}/issues"
+    "url": "https://github.com/stephendltg/alpine-theme.git/issues"
   },
-  "homepage": "https://github.com/{{package-slug}}#readme",
+  "homepage": "https://github.com/stephendltg/alpine-theme.git#readme",
   "scripts": {
     "build": "env NODE_ENV=production rollup --config rollup.prod.config.js && postcss src/static/css/tailwind.css -o dist/static/css/tailwind.css",
     "watch": "rollup --config rollup.dev.config.js -w && postcss src/static/css/tailwind.css -o dist/static/css/tailwind.css",
@@ -21,7 +21,7 @@
     "spruce",
     "starter"
   ],
-  "author": "{{author-name}} <{{author-name}}>",
+  "author": "stephendltg <s.deletang@icloud.com>",
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
