@@ -2,14 +2,15 @@
 <h1>my apps</h1>
 
 <div x-data="{ tab: 'foo' }">
-    <button :class="{ 'active': tab === 'foo' }" @click="tab = 'foo'">Foo</button>
-    <button :class="{ 'active': tab === 'bar' }" @click="tab = 'bar'">Bar</button>
+    <button :class="{ 'active btn--primary': tab === 'foo' }" @click="tab = 'foo'">Foo</button>
+    <button :class="{ 'active btn--primary': tab === 'bar' }" @click="tab = 'bar'">Bar</button>
 
-    <div x-show="tab === 'foo'"><button @click="alert($store.counter.count)">test</button>Tab Foo</div>
-    <div x-show="tab === 'bar'">Tab Bar</div>
+    <div class="mam" x-show="tab === 'foo'"><button @click="alert($store.counter.count)">test</button>Tab Foo</div>
+    <div class="mam" x-show="tab === 'bar'"><span class="mdi mdi-home mdi-24px"></span> Tab Bar </div>
 </div>
 
 <style>
+
 h1{
   color: tomato;
 }
