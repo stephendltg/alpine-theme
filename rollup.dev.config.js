@@ -5,10 +5,10 @@ import livereload from 'rollup-plugin-livereload'
 
 export default {
   input: [
-    './src/app.js'
+    './src/static/js/app.js'
   ],
   output: {
-    dir: './dist',
+    dir: './dist/static/js/',
     format: 'es'
   },
   preserveModules: true,

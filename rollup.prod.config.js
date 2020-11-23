@@ -4,10 +4,10 @@ import del from 'rollup-plugin-delete'
 
 export default {
   input: [
-    './src/app.js'
+    './src/static/js/app.js'
   ],
   output: {
-    dir: './dist',
+    dir: './dist/static/js/',
     format: 'es'
   },
   preserveModules: true,

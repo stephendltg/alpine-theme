@@ -7,7 +7,7 @@ Spruce.store('counter', {
   countDown: 100
 })
 
-// persitent store
+
 Spruce.store('toast', {
     toasts: ["<i>test</i>"],
     add(message) {

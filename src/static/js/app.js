@@ -1,4 +1,4 @@
-import { registerComponents, registerLayouts } from './utils.js'
+import { registerComponents, registerLayouts, buildComponent } from './utils.js'
 import './store.js'
 
 
@@ -6,7 +6,10 @@ const components = [...document.querySelectorAll("[x-data$='()']")].map(componen
   return component.getAttribute('x-data').slice(0,-2)
 })
 
+
 const layouts = [...document.querySelectorAll("[x-src]")].map(layer => layer.getAttribute('x-src'))
+
+
 
 ;(async () => {
   
@@ -21,7 +24,7 @@ const layouts = [...document.querySelectorAll("[x-src]")].map(layer => layer.get
   await registerComponents(components)
   
   await import('https://cdn.jsdelivr.net/gh/kevinbatdorf/alpine-magic-helpers@0.4.x/dist/index.js')
-  await import('https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js')  
+  await import('https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js') 
   
 })()
 
