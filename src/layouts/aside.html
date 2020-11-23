@@ -1,0 +1,7 @@
+<div x-data>
+    <template x-for="(toast, index) in $store.toast.toasts">
+        <div @click="$store.toast.remove(index)" class="toast">
+            <span x-html="toast"></span>
+        </div>
+    </template>
+</div>

@@ -9,14 +9,14 @@ Spruce.store('counter', {
 
 // persitent store
 Spruce.store('toast', {
-    toasts: [],
+    toasts: ["<i>test</i>"],
     add(message) {
         this.toasts.push(message)
     },
     remove(index) {
         this.toasts.splice(index, 1)
     }
-}, true )
+} )
 
 
 Spruce.store('user', {
