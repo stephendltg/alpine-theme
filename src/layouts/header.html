@@ -1,12 +1,48 @@
+<div class="navbar-fixed">
+<nav class="nav-extended teal lighten-2 ptm">
+    <div class="nav-wrapper mlm">
+      <a href="#" class="brand-logo">
+        <span class="mdi mdi-android-debug-bridge  mdi-48px"></span> 
+        Starter Theme
+      </a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+        <i class="material-icons">menu</i>
+      </a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">JavaScript</a></li>
+      </ul>
+    </div>
+    <div class="nav-content">
+      <ul class="tabs tabs-transparent">
+        <li class="tab"><a href="#section1">Test 1</a></li>
+        <li class="tab"><a class="active" href="#section2">Test 2</a></li>
+        <li class="tab disabled"><a href="#section3">Disabled Tab</a></li>
+        <li class="tab"><a href="#section4">Test 4</a></li>
+      </ul>
+    </div>
+  </nav>
 
-<h1>my apps</h1>
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="sass.html">Sass</a></li>
+    <li><a href="badges.html">Components</a></li>
+    <li><a href="collapsible.html">JavaScript</a></li>
+  </ul>
+</div>
 
-<div x-data="{ tab: 'foo' }">
+<div class="mtl pas ptl">
+
+  <h1>my apps</h1>
+
+  <div x-data="{ tab: 'foo' }">
     <button :class="{ 'active btn--primary': tab === 'foo' }" @click="tab = 'foo'">Foo</button>
     <button :class="{ 'active btn--primary': tab === 'bar' }" @click="tab = 'bar'">Bar</button>
 
     <div class="mam" x-show="tab === 'foo'"><button @click="alert($store.counter.count)">test</button>Tab Foo</div>
     <div class="mam" x-show="tab === 'bar'"><span class="mdi mdi-home mdi-24px"></span> Tab Bar </div>
+  </div>
+  
 </div>
 
 <style>

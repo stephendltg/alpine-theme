@@ -17,7 +17,7 @@ Spruce.store('toast', {
 
 
 Spruce.store('user', {
-    name: 'Ryan Chandler',
+    name: 'Stephen',
     email: 'support@ryangjchandler.co.uk',
 })
 

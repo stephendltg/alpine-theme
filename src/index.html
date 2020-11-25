@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Alpine Starter Template</title>
   <link rel="stylesheet" href="./static/css/tailwind.css" />
@@ -15,9 +16,46 @@
   </style>
 </head>
 
-<body class="pas">
+<body>
 
 <header x-src="./layouts/header.html"></header>
+
+<main>
+  <div id="section1" class="col s12 pas" style="padding-top: 10rem">
+      Test 1
+  </div>
+  <div id="section2" class="col s12 pas" style="padding-top: 10rem">
+    Test 2
+  </div>
+  <div id="section3" class="col s12 pas" style="padding-top: 10rem">
+    Test 3
+  </div>
+  <div id="section4" class="col s12 pas" style="padding-top: 10rem">
+    Test 4
+  </div>
+</main>
+
+<form action="#">
+    <p class="range-field">
+      <input type="range" id="test5" min="0" max="100" />
+    </p>
+  </form>
+
+    <div class="grid-3">
+      <div class="card blue-grey darken-1">
+        <div class="card-content white-text">
+          <span class="card-title">Card Title</span>
+          <p>I am a very simple card. I am good at containing small bits of information.
+          I am convenient because I require little markup to use effectively.</p>
+        </div>
+        <div class="card-action">
+          <a href="#">This is a link</a>
+          <a href="#">This is a link</a>
+        </div>
+      </div>
+      
+    </div>
+  
 
 <div x-data="{ color: 'blue' }">
     <p
@@ -32,8 +70,8 @@
 
 
    <div x-data="toggle()">
-          <button class="bg-green-500 hover:bg-green-700 text-white text-xs font-bold p-1 rounded mb-4" @click="show">show text</button>
-          <button class="bg-gray-500 hover:bg-gray-700 text-white text-xs font-bold p-1 rounded mb-4" @click="hide">hide text</button>
+          <button class=" waves-effect waves-light btn" @click="show">show text</button>
+          <button class=" waves-effect waves-light btn" @click="hide">hide text</button>
           <p x-show="open" x-cloak class="text-lg text-gray-500 italic w-64">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
 
