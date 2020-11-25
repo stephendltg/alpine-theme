@@ -20,7 +20,7 @@ export default {
         {
           src: 'src/index.html',
           dest: 'dist',
-          transform: (contents) => contents.toString().replace('tailwind.css', 'tailwind.css')
+          transform: (contents) => contents.toString().replace('style.css', 'style.css')
         },
         {
           src: 'src/static/img/*',

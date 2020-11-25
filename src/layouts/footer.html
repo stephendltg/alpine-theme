@@ -3,13 +3,17 @@
   <div class="container">
     <div class="row ptm">
       <div class="col l6 s12">
-        <h5 class="white-text">Footer Content</h5>
+        <h5 class="white-text">Starter theme</h5>
         <p class="grey-text text-lighten-4">
           You can use rows and columns here to organize your footer content.
         </p>
       </div>
     <div class="col l4 offset-l2 s12">
-      <h5 class="white-text">Links</h5>
+      <h5 class="chip">
+        <img src="https://www.locationvoiture-casablanca.com/wp-content/uploads/2018/08/personnage.png" alt="Contact Person">
+        <i class="close material-icons">free_breakfast</i>
+        Links
+      </h5>
         <ul>
           <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
           <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
@@ -21,10 +25,10 @@
   </div>
   <div class="footer-copyright">
     <div class="container">
-      © 2014 Copyright 
-      <span x-data x-text="$store.user.name">
-      </span>
-      <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+      © 2020 Copyright 
+      <a class="grey-text text-lighten-4" x-data x-text="$store.user.name" x-bind:href="'mailto:'+ $store.user.email">
+      </a>
+      <a class="grey-text text-lighten-4 right" href="#">More Links</a>
     </div>
   </div>
 </footer>

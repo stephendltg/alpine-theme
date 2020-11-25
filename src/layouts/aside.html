@@ -1,7 +1,10 @@
-<div x-data>
+<div class="pas" x-data>
+  <ul class="collection with-header">
+    <li class="collection-header blue"><h4>Toast</h4></li>
     <template x-for="(toast, index) in $store.toast.toasts">
-        <div @click="$store.toast.remove(index)" class="toast">
+        <li @click="$store.toast.remove(index)" class="collection-item">
             <span x-html="toast"></span>
-        </div>
+        </li>
     </template>
+  </ul>
 </div>

@@ -17,8 +17,8 @@ Spruce.store('toast', {
 
 
 Spruce.store('user', {
-    name: 'Stephen',
-    email: 'support@ryangjchandler.co.uk',
+    name: 'stephendtlg',
+    email: 's.deletang@icloud.com',
 })
 
 Spruce.watch('user.name', value => console.log(value))

@@ -9,9 +9,11 @@
         <i class="material-icons">menu</i>
       </a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">JavaScript</a></li>
+        <li><a href="https://materializecss.com/chips.html">MaterialDesign</a></li>
+        <li><a href="https://www.knacss.com">Knacss</a></li>
+        <li><a href="https://github.com/alpinejs/alpine">Alpinejs</a></li>
+        <li><a href="https://github.com/ryangjchandler/spruce">Spruce</a></li>
+        <li><a href="https://github.com/KevinBatdorf/alpine-magic-helpers">Helper magic</a></li>
       </ul>
     </div>
     <div class="nav-content">
@@ -25,9 +27,9 @@
   </nav>
 
   <ul class="sidenav" id="mobile-demo">
-    <li><a href="sass.html">Sass</a></li>
-    <li><a href="badges.html">Components</a></li>
-    <li><a href="collapsible.html">JavaScript</a></li>
+    <li><a href="https://materializecss.com/chips.html">MaterialDesign</a></li>
+    <li><a href="https://www.knacss.com">Knacss</a></li>
+    <li><a href="https://github.com/alpinejs/alpine">Alpînejs</a></li>
   </ul>
 </div>
 
@@ -36,11 +38,11 @@
   <h1>my apps</h1>
 
   <div x-data="{ tab: 'foo' }">
-    <button :class="{ 'active btn--primary': tab === 'foo' }" @click="tab = 'foo'">Foo</button>
-    <button :class="{ 'active btn--primary': tab === 'bar' }" @click="tab = 'bar'">Bar</button>
+    <button class="waves-effect waves-light btn blue" :class="{ 'active teal': tab === 'foo' }" @click="tab = 'foo'">Foo</button>
+    <button  class="waves-effect waves-light btn blue" :class="{ 'active teal': tab === 'bar' }" @click="tab = 'bar'">Bar</button>
 
     <div class="mam" x-show="tab === 'foo'"><button @click="alert($store.counter.count)">test</button>Tab Foo</div>
-    <div class="mam" x-show="tab === 'bar'"><span class="mdi mdi-home mdi-24px"></span> Tab Bar </div>
+    <div class="mam" x-show="tab === 'bar'">Tab Bar </div>
   </div>
   
 </div>
