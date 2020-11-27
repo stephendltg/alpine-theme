@@ -1,3 +1,11 @@
+/**
+ * Name: store
+ * Description: store for alpinejs
+ * Sub Module: store.js
+ * Author: Epyo - stephen D.
+ * Version: 1.0.0
+ */
+
 Spruce.store('counter', {
   count: 0,
   countUp: 0,

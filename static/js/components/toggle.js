@@ -2,6 +2,7 @@ import { buildComponent } from '../utils.js'
 
 const data = {
   open: false,
+  text: 'rer'
 }
 
 const methods = {

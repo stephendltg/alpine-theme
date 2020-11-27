@@ -19,125 +19,27 @@
 
 <header x-src="./layouts/header.html"></header>
 
-<div class="fixed-action-btn">
-  <a class="btn-floating btn-large red">
-    <i class="large material-icons">mode_edit</i>
-  </a>
-  <ul>
-    <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
-    <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
-    <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
-    <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
-  </ul>
-</div>
+<p class="range-field">
+  <input type="range" min="0" max="100" />
+</p>
 
 <main>
 
   <!-- section 1 -->
-  <div id="section1" class="col s12 pas" style="padding-top: 10rem">
-    <div class="row">
-    <div class="col s12 m4">
-      <div class="card">
-        <div class="card-image pas">
-          <img class="responsive-img" src="https://www.locationvoiture-casablanca.com/wp-content/uploads/2018/08/personnage.png" loading="lazy">
-          <span class="card-title">Card Title</span>
-        </div>
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p>
-        </div>
-        <div class="card-action">
-          <a href="#">This is a link</a>
-        </div>
-      </div>
-    </div>
-    <div class="col s12 m4">
-      <div class="card">
-        <div class="card-image pas">
-          <img class="responsive-img" src="https://www.locationvoiture-casablanca.com/wp-content/uploads/2018/08/personnage.png" loading="lazy">
-          <span class="card-title">Card Title</span>
-        </div>
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p>
-        </div>
-        <div class="card-action">
-          <a href="#">This is a link</a>
-        </div>
-      </div>
-    </div>
-    </div>
-  </div>
+  <div id="section1" class="col s12 pas" style="padding-top: 10rem" x-src="./layouts/section1.html"></div>
   
   <!-- section 2 -->
-  <div id="section2" class="col s12 pas" style="padding-top: 10rem">
-    
-    <div class="grid-3">
-      <div class="card blue-grey darken-1">
-        <div class="card-content white-text">
-          <span class="card-title">Card Title</span>
-          <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p>
-        </div>
-        <div class="card-action">
-          <a href="#">This is a link</a>
-          <a href="#">This is a link</a>
-        </div>
-      </div>
-  </div>
+  <div id="section2" class="col s12 pas" style="padding-top: 10rem" x-src="./layouts/section2.html"></div>
   
   
   <!-- section 3 -->
-  <div id="section3" class="col s12 pas" style="padding-top: 10rem">
-  
-    <input type="text" class="datepicker">
-  
-    <form action="#">
-      
-      <p class="range-field">
-        <input type="range" id="test5" min="0" max="100" />
-      </p>
-    </form>
-  </div>
+  <div id="section3" class="col s12 pas" style="padding-top: 10rem" x-src="./layouts/section3.html"></div>
   
   
   <!-- section 4 -->
-  <div id="section4" class="col s12 pas" style="padding-top: 10rem">
-    <div class="row">
-      <form class="col s12">
-        <div class="row">
-          <div class="input-field col s12">
-            <textarea id="textarea1" class="materialize-textarea"></textarea>
-            <label for="textarea1">Textarea</label>
-          </div>
-        </div>
-      </form>
-  </div>
-  </div>
+  <div id="section4" class="col s12 pas" style="padding-top: 10rem" x-src="./layouts/section4.html" x-data="toggle()"></div>
+
 </main>
-
-
-
-<div x-data="{ color: 'blue' }">
-    <p
-        x-data
-        x-text="$component('yellowSquare').color + $parent.color"
-        :class="`text-${$parent.color}-700`">
-        <!-- This text will have blue background color and the text will say yellow -->
-    </p>
-</div>
-
-<div x-id="yellowSquare" x-data="{ color: 'yellow' }"></div>
-
-
-   <div x-data="toggle()">
-          <button class=" waves-effect waves-light btn" @click="show">show text</button>
-          <button class=" waves-effect waves-light btn" @click="hide">hide text</button>
-          <p x-show="open" x-cloak class="text-lg text-gray-500 italic w-64">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-
-
-
 
 
       <div class="">
@@ -169,6 +71,11 @@
       
   <aside x-src="./layouts/aside.html"></aside>
   <footer x-src="./layouts/footer.html"></footer>
+
+  <!-- Float button -->
+  <div class="fixed-action-btn" x-src="./layouts/floatingButton.html"></div>
+
+
 
   <script type="module" src="./static/js/app.js"></script>
 </body>

@@ -1,3 +1,11 @@
+/**
+ * Name: utils
+ * Description: utils for environment alpinejs
+ * Sub Module: utils.js
+ * Author: Epyo - stephen D.
+ * Version: 1.0.0
+ */
+
 export const registerComponents = components => {
   return Promise.all(
     components.map(component => {
