@@ -19,10 +19,8 @@
 
 <body>
 
-<div x-data="{loading: false}">
-  <div x-show="loading" class="progress">
-    <div class="indeterminate"></div>
-  </div>
+<div class="progress" x-data="{loading: false}">
+    <div v-show class="indeterminate"></div>
 </div>
 
 <header x-src="./layouts/header.html"></header>
