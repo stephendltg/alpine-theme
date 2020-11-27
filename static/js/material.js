@@ -15,3 +15,4 @@ var instances = M.FloatingActionButton.init(elems, {
 // Date picker
 var elems = document.querySelectorAll('.datepicker');
 var instances = M.Datepicker.init(elems);
+
