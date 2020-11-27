@@ -1,7 +1,3 @@
-/*
- * Component toggle
- */
- 
 import { buildComponent } from '../utils.js'
 
 const data = {
