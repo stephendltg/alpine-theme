@@ -1,5 +1,5 @@
 <div class="navbar-fixed">
-<nav class="nav-extended steal lighten-2 ptm">
+  <nav class="nav-extended steal lighten-2 ptm">
     <div class="nav-wrapper mlm">
       <a href="#" class="brand-logo">
         ADMIN
@@ -17,10 +17,10 @@
     </div>
     <div class="nav-content">
       <ul class="tabs tabs-transparent">
-        <li class="tab"><a href="#section1" target="_self">Test 1</a></li>
-        <li class="tab"><a class="active" target="_self" href="#section2">Test 2</a></li>
-        <li class="tab disabled"><a href="#section3" target="_self" >Disabled Tab</a></li>
-        <li class="tab"><a href="#section4" target="_self" >Test 4</a></li>
+        <li class="tab"><a href="#section1">Test 1</a></li>
+        <li class="tab"><a href="#section2">Test 2</a></li>
+        <li class="tab"><a href="#section3">Disabled Tab</a></li>
+        <li class="tab"><a href="#section4">Test 4</a></li>
       </ul>
     </div>
   </nav>
@@ -30,20 +30,6 @@
     <li><a href="https://www.knacss.com">Knacss</a></li>
     <li><a href="https://github.com/alpinejs/alpine">Alpînejs</a></li>
   </ul>
-</div>
-
-<div class="mtl pas ptl">
-
-  <h1>my apps</h1>
-
-  <div x-data="{ tab: 'foo' }">
-    <button class="waves-effect waves-light btn blue" :class="{ 'active teal': tab === 'foo' }" @click="tab = 'foo'">Foo</button>
-    <button  class="waves-effect waves-light btn blue" :class="{ 'active teal': tab === 'bar' }" @click="tab = 'bar'">Bar</button>
-
-    <div class="mam" x-show="tab === 'foo'"><button @click="alert($store.counter.count)">test</button>Tab Foo</div>
-    <div class="mam" x-show="tab === 'bar'">Tab Bar </div>
-  </div>
-  
 </div>
 
 <style>

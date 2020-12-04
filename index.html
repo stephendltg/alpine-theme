@@ -46,38 +46,10 @@
 </main>
 
 
-      <div class="">
-        <div x-data="{ color: 'green' }" x-id="dad" class="text-sm" :class="`text-${color}-500`">I am the Daddy!
-          <span class=""> (parent component)</span> and my color is:
-          <input x-model="color" class="w-16" />
-          <div class="">I am the Son
-            <span class=""> (child component)</span> - 
-            <span class="">Dad is feeling 
-              <span x-data x-id="son" x-text="$parent.color" :class="`text-${$parent.color}-500`">
-              </span>
-            </span>
-          </div>
-          <div class="">I am the Daughter
-            <span class=""> (child component)</span> - 
-            <span class="">Uncle is feeling 
-              <span x-data x-id="daughter" x-text="$component('uncle').color" :class="`text-${$component('uncle').color}-500`">
-              </span>
-            </span>
-          </div>
-        </div>
-        <div x-data="{ color: 'yellow' }" x-id="uncle" class="text-sm" :class="`text-${color}-500`">
-          I am the Uncle!
-          <span class=""> (sibling component)</span> 
-          and my color is: 
-          <input x-model="color" class="w-16">
-        </div>
-      </div>
-      
-  <aside x-src="./layouts/aside.html"></aside>
-  <footer x-src="./layouts/footer.html"></footer>
+<footer x-src="./layouts/footer.html"></footer>
 
-  <!-- Float button -->
-  <div class="fixed-action-btn" x-src="./layouts/floatingButton.html"></div>
+<!-- Float button -->
+<div class="fixed-action-btn" x-src="./layouts/floatingButton.html"></div>
 
 
 
