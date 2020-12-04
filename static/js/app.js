@@ -41,7 +41,7 @@ const layouts = [...document.querySelectorAll("[x-src]")].map(layer => layer.get
   })
   .catch( e => console.warn('error: materialize  unloaded') )
 
-  await import('./vendors/alpine-magic-helper.js')
+  // await import('./vendors/alpine-magic-helper.js')
   await import('./vendors/alpine.js')
   
 })()
