@@ -50,7 +50,7 @@
 <div class="mas" x-data="{ open: false }">
     <button class="btn"
         @mouseenter.once="
-            fetch('/layouts/load.html')
+            fetch('/layouts/loadi.html')
                 .then(response => response.text())
                 .then(html => { $refs.dropdown.innerHTML = html })
         "
@@ -58,10 +58,20 @@
     >Show Dropdown</button>
 
     <div x-ref="dropdown" x-show="open" @click.away="open = false">
-        Loading Spinner...
-        <div class="progress">
-          <div class="indeterminate"></div>
+       <div class="preloader-wrapper small active">
+          <div class="spinner-layer spinner-green-only">
+            <div class="circle-clipper left">
+              <div class="circle"></div>
+            </div>
+            <div class="gap-patch">
+              <div class="circle"></div>
+            </div>
+            <div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
         </div>
+      </div>
+        Loading Spinner...
     </div>
 </div>
 
