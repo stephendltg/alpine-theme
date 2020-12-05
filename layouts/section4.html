@@ -2,11 +2,11 @@
     <form class="col s12">
       <div class="row">
         <div class="input-field col s12">
-          <textarea id="textarea1" class="materialize-textarea" x-model="text"></textarea>
+          <textarea id="textarea1" class="materialize-textarea" x-model="user.name"></textarea>
           <label for="textarea1">Textarea</label>
         </div>
         <div>
-          <blockquote x-text="text"></blockquote>
+          <blockquote x-text="user.name + ' | ' + user.email"></blockquote>
         </div>
       </div>
     </form>

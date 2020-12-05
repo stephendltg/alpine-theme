@@ -2,7 +2,7 @@ import { buildComponent } from '../utils.js'
 
 const data = {
   open: false,
-  text: 'rer'
+  user: Spruce.store('user')
 }
 
 const methods = {
