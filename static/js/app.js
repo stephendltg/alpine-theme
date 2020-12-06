@@ -27,6 +27,14 @@ const layouts = [...document.querySelectorAll("[x-src]")].map(layer => layer.get
     // console.log('materialize loaded')
     // init
     M.AutoInit();
+    // carousel
+    
+    var elems = document.querySelectorAll('.carousel');
+    var instances = M.Carousel.init(elems, {
+      fullWidth: true,
+      indicators: true
+    });
+    
     // Element
     var elems = document.querySelectorAll('.sidenav-trigger');
     var instances = M.Sidenav.init(elems);
