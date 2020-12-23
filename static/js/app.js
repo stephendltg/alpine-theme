@@ -5,6 +5,7 @@
  * Version: 1.0.0
  */
 import { registerComponents, registerLayouts, loadScript } from './utils.js'
+  
 
 
 const components = [...document.querySelectorAll("[x-data$='()']")].map(component => {
@@ -18,6 +19,7 @@ const layouts = [...document.querySelectorAll("[x-src]")].map(layer => layer.get
   
   await import ('./vendors/spruce.js')
   await import ('./store.js')
+
   
   await registerLayouts(layouts)
   await registerComponents(components)
