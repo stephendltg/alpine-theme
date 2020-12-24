@@ -27,12 +27,7 @@ export const registerLayouts = layouts => {
     layouts.map(url => 
       _fetch(url)
       .then(res => res.text())
-      .then(data => 
-        layers.push({
-          url: url,
-          data: data
-        }) 
-      ) 
+      .then(data => layers.push({ url: url, data: data }) ) 
     )
   )
   .then(data => layers.map( x => {
@@ -133,12 +128,9 @@ export const humanDate = (date, locales = 'default-u-nu-latn') => {
  	*
  	*/
 export const __ = function(text, ...args) {
-
     if (typeof text != "string") return text;
-    // trim text
     text = text.trim()
     if (text.length == 0) return ""
-    // Translate
     if ( typeof i18n != "undefined" && i18n.hasOwnProperty(lang) && i18n[lang].hasOwnProperty(text) ) {
       text = i18n[lang][text]
     }
@@ -162,7 +154,7 @@ export const _n = function(singular, plural, number, ...args) {
 
 
 /*
- * i18n - functions global
+ * i18n - functions global for template
  */
 import {i18n} from './i18n/dictionnary.js'
 window._date = ( date = new Date() ) => humanDate( date, lang )
