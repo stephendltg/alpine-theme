@@ -8,6 +8,10 @@
         <div class="card-content">
           <p>I am a very simple card. I am good at containing small bits of information.
           I am convenient because I require little markup to use effectively.</p>
+          <div x-data="">
+            <p x-text="_date('2017-11-18T10:11')"></p>
+            <p x-text="_n('car', 'cars', -2)"></p>
+          </div>
         </div>
         <div class="card-action">
           <a href="#">This is a link</a>
