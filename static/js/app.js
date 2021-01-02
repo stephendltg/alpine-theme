@@ -49,3 +49,12 @@ const layouts = [...document.querySelectorAll("[x-src]")].map(layer => layer.get
   
 })()
 
+// Service worker: PWA
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+      navigator.serviceWorker
+        .register('./static/js/sw.js')
+        .then(registration => console.log(`Service Worker load ! Ressource: ${registration.scope}`) )
+        .catch(err => console.log(`Error loading Service Worker: ${err}`) )
+  });
+}
