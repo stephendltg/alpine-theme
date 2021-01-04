@@ -131,8 +131,8 @@ export const __ = function(text, ...args) {
     if (typeof text != "string") return text;
     text = text.trim()
     if (text.length == 0) return ""
-    if ( typeof i18n != "undefined" && i18n.hasOwnProperty(lang) && i18n[lang].hasOwnProperty(text) ) {
-      text = i18n[lang][text]
+    if ( typeof i18n != "undefined" && i18n.hasOwnProperty(lang.toLowerCase()) && i18n[lang.toLowerCase()].hasOwnProperty(text) ) {
+      text = i18n[lang.toLowerCase()][text]
     }
     let i = 0;
     return text.replace(/%s/g, () => args[i++])
