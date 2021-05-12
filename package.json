@@ -32,7 +32,7 @@
     "autoprefixer": "^10.0.2",
     "clean-css-cli": "^4.3.0",
     "node-sass": "^5.0.0",
-    "postcss": "^8.1.10",
+    "postcss": "^8.2.10",
     "postcss-cli": "^8.3.0"
   }
 }
